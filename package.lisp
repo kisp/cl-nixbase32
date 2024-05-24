@@ -2,4 +2,4 @@
 
 (defpackage :cl-nixbase32
   (:use :common-lisp :alexandria)
-  (:export))
+  (:export #:bytes-to-nixbase32))

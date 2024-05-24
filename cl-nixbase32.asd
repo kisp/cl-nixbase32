@@ -11,5 +11,5 @@
                (:file "package")
                (:file "cl-nixbase32" :depends-on ("package"))
                )
-  :depends-on (:alexandria)
+  :depends-on (:alexandria :arrow-macros)
   :in-order-to ((test-op (test-op :cl-nixbase32-test))))

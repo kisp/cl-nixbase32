@@ -6,7 +6,7 @@
   :components ((:module "test"
                 :components ((:file "package")
                              (:file "test" :depends-on ("package")))))
-  :depends-on (:cl-nixbase32 :myam :alexandria))
+  :depends-on (:cl-nixbase32 :myam :alexandria :ironclad))
 
 (defmethod perform ((op test-op)
                     (system (eql (find-system :cl-nixbase32-test))))
